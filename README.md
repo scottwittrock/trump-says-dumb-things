@@ -7,7 +7,7 @@ Simple express application to display stupid things Trump has said. I created th
 To run locally clone the repository and in the folder run the following commands. 
 ```
 npm i
-node run start
+npm run start
 ```
 
 # Deployment 
