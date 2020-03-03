@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs');
+const axios = require('axios');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -7,8 +7,12 @@ const PORT = process.env.PORT || 8080;
 app.set('view engine', 'ejs');
 app.get(express.static(__dirname + '/public'));
 
-app.get('/', (req, res)=>{
-  res.render('index');
+app.get('/', async (req, res) => {
+  // Trump Dump quotes https://docs.tronalddump.io/
+  const url = 'https://api.tronalddump.io/random/quote'
+  const trumpResponse = await axios.get(url)
+  const original = trumpResponse.data.value;
+  res.render('index', {original});
 })
 
 app.listen(PORT, ()=>{
