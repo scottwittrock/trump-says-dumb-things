@@ -1,0 +1,22 @@
+{
+  "name": "trump-as-yoda",
+  "version": "1.0.0",
+  "description": "Simple express application to display stupid things Trump said as if spoke like yoda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottwittrock/trump-as-yoda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottwittrock/trump-as-yoda/issues"
+  },
+  "homepage": "https://github.com/scottwittrock/trump-as-yoda#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
