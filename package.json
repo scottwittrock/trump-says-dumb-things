@@ -4,7 +4,8 @@
   "description": "Simple express application to display stupid things Trump said as if spoke like yoda.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/scottwittrock/trump-as-yoda#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
 }
