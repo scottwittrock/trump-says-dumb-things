@@ -5,7 +5,6 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.set('view engine', 'ejs');
-app.get(express.static(__dirname + '/public'));
 
 app.get('/', async (req, res) => {
   // Trump Dump quotes https://docs.tronalddump.io/
